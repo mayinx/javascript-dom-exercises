@@ -1,7 +1,7 @@
 const data = [];
 const inputs = document.querySelectorAll("input, textarea");
 const form = document.querySelector(".super-form");
-document.querySelector(".submit-button").addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formDataObj = {};
   inputs.forEach((input) => {
